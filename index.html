@@ -4,13 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration Form</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <!-- Below are the labels and input that was choose for the form firstname..lastname.. -->
     <div class="form-container">
       <form id="registrationForm" onsubmit="return validateForm()">
         <h2>Registration Form</h2>
+        <img class="login__image" src="./img/login.png" />
+        <!-- the mean of used required is -->
+        <!-- The Boolean required attribute, if present, indicates that the user
+         must specify a value for the input before the owning form can be submitted.
+         The required attribute is supported by text, search, url, tel, email, password, 
+         date, month, week, time, datetime-local, number, checkbox, radio, file,
+          <input>  -->
+          <!-- so if I miss to fill a input box a message will show up saying that
+          box is required -->
         <label for="firstName">First Name:</label>
         <input type="text" id="firstName" name="firstName" required />
 
